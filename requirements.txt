@@ -1,0 +1,4 @@
+google-cloud-bigquery
+google-cloud-storage
+basicauth==0.4.1
+python-dateutil==2.8.1
