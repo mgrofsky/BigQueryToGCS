@@ -21,3 +21,5 @@ I wrote this Google Cloud Function to share some various aspects of how to combi
 <b>Notes:</b>
 
 This is by no means a definitive way to accomplish the tasks at hand.  Feel free to modify the script and provide a merge request for any changes you feel that could benefit someone else.
+
+Ideally I would like to rewrite this so separate actions are put into their own functions.
