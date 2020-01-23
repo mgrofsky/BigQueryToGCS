@@ -97,7 +97,7 @@ def exportdata(request):
 	for blob in blobs:
 		print(blob.name)
 		blob.make_public()
-		link_html = link_html + "\nhttps://exports.domain.com/" + blob.name
+		link_html = link_html + '<br><a href="https://exports.domain.com/' + blob.name + '">Call Report</a>'
 
     #Set up the smtplib object that will be used
 	server = smtplib.SMTP('smtp.sendgrid.net', 587)
@@ -133,7 +133,7 @@ def exportdata(request):
       <body>
         <p>Your Logs are ready and can be downloaded by clicking the link below.<br>
            They will be available for 48 hours.<br><br>
-           Download: <a href=""" + link_html + """>Call Report</a><br>
+           Download: """ + link_html + """
         </p>
       </body>
     </html>
